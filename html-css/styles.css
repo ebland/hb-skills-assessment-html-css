@@ -1,20 +1,16 @@
+
 input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px;
-    background-color: #FFFF00;
-    color: black;
+    background-color: #FFFF00; 
 }
 
-input[type=submit] {
-    width: 100%;
+.button {
     background-color: #FFFF00;
-    color: black;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: 0px;
-    border-radius: 4px;
-    cursor: pointer;
+}
+
+p {
+    border: solid;
+}
+
+.last_name {
+    font-weight: bold;
 }
