@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="Application for Employment" name="description">
+    <meta content="Elizabeth Bland" name="author">
+    <meta content="applicant form, application, job application, online job, application" name="keywords">
+    <title>Application for Employment | Form</title>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<p>Please fill out the form to complete your application.</p>
+<form action="/application-success" method="POST">
+First Name: <input type="text" name="firstname" required>
+<br>
+Last Name: <input type="text" input id="firstname" name="lastname" required>
+<br>
+Starting Salary: <input type="number" id="salary" name="salary" required> 
+<br>
+<br>
+Position Applying For:
+    <select name="jobtype">
+      <option value="softwareengineer">Software Engineer</option>
+      <option value="qaengineer">QA Engineer</option>
+      <option value="productengineer">Product Engineer</option>
+    </select>
+<br>
+  <input type="submit" value="Submit">
+</form>
+<footer>
+</footer>
+</body>
+</html>
+
+
+(DONE)A form that asks the user:
+(DONE)their first and last name (as separate fields),
+(TODO done)their salary requirement as a number, and. (Put Salary in )
+(DONE) which job they are applying for, as a dropdown from a list of:
+(DONE) Software Engineer
+(DONE) QA Engineer
+(DONE) Product Manager
+(TODO) The form should use HTML 5 input types for validation. 
+(DONE) The form should also have a submit button that submits the form to the URL (DONE) path /application-success. This should be a POST request. (For now, just focus on the HTML requirements for this request. Don’t build a Flask route, yet.)
+The page should have a large heading and some explanatory text, as well.
+
+
+
