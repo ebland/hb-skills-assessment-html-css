@@ -1,0 +1,40 @@
+{% extends 'base.html' %} 
+{% block title %}Application Form{% endblock %}
+
+{% block content %}
+<!doctype html>
+<html>
+    <head>
+<h1>Application Form</h1>
+
+  <p id="instructions">Type or print all information requested on the application form. Applications not completely and accurately filled in and accompanied by all required supporting materials will be returned to the applicant. It is advisable after filling out the application online to print an extra copy to keep with your records.</p>
+
+<form action="/application" method="POST">
+        <label for="firstname">First Name:</label>
+        <input id="firstname" type="text" name="firstname">
+        <br>
+        <br>
+        <label for="lastname">Last Name:</label>
+        <input id="lastname" type="text" name="lastname">
+        <br>
+        <br>
+        <label for="salary">Salary Requirement (Please enter a number):</label>
+        <input id="salary" type="text" name="salary" value="50000">
+        <br>
+        <br>
+        <label for="jobtype">Which position are you applying for? (Please select one)</label>
+        <select id="jobtype" name="jobtype">
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="Product Manager">Product Manager</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+      </body>
+</html>
+{% endblock %}
+
+  
+     
